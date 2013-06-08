@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.example.mini"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".InputData"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Input"
+                  android:label="@string/input">
+         </activity>
+          <activity android:name=".LoadDatabase"
+                    android:label="@string/loaddb">
+         </activity>
+          <activity android:name=".InputManually"
+                    android:label="@string/inputmanual">
+         </activity>
+         <activity android:name=".SelUpdate"
+                    android:label="@string/selupdate">
+         </activity>
+          <activity android:name=".Delete"
+                    android:label="@string/delete">
+         </activity>
+         
+          <activity android:name=".DeleteIndl"
+                    android:label="@string/delete">
+         </activity>
+         
+          <activity android:name=".DeleteSub"
+                    android:label="@string/delete">
+         </activity>
+         <activity android:name=".ViewDetails"
+                    android:label="INDIVIDUAL DETAILS">
+         </activity>
+         <activity android:name=".SelectFirers"
+                    android:label="SELECT FIRERS">
+         </activity>
+         <activity android:name=".Arbitrary"
+                    android:label="ARBITRARY">
+         </activity>
+         <activity android:name=".SelectAny"
+                    android:label="SELECT ANY">
+         </activity>
+         
+         <activity android:name=".SelectManually"
+                    android:label="SELECT MANUALLY">
+         </activity>
+         
+         <activity android:name=".SelFirerManually"
+                    android:label="SELECT MANUALLY">
+         </activity>
+         <activity android:name=".WpnAllotment"
+                    android:label="WEAPON ALLOTMENT">
+         </activity>
+         <activity android:name=".ViewIndlWpn"
+                    android:label="VIEW INDL WEAPON">
+         </activity>
+         <activity android:name=".AllotAddlWpns"
+                    android:label="ALLOT ADDL WEAPONS">
+         </activity>
+         <activity android:name=".ChangeAllotment"
+                    android:label="CHANGE ALLOTMENT">
+         </activity>
+         
+                 
+         <activity android:name=".DetailSelection"
+                    android:label="DETAIL SELECTION">
+         </activity>
+         <activity android:name=".FiringDetail"
+                    android:label="FIRING DETAIL">
+         </activity>
+         <activity android:name=".ChangeFirers"
+                    android:label="CHANGE FIRERS">
+         </activity>
+         
+         
+    </application>
+    <uses-sdk android:minSdkVersion="4" />
+
+</manifest> 

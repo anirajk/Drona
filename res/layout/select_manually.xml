@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+<TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="SELECT MANUALLY" />
+
+<TableLayout  android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:stretchColumns="*">
+
+ <TableRow>
+
+ <CheckBox android:id="@+id/selmanwpncbox_label"
+           android:text="WPN" />
+ 
+ <Spinner android:id="@+id/selmanwpn_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/weapon_prompt" />
+
+ <CheckBox android:id="@+id/selmantradecbox_label"
+           android:text="TRADE" />
+ 
+ <Spinner android:id="@+id/selmantrade_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="false"
+          android:prompt="@string/trade_prompt" />
+
+ </TableRow>
+
+ <TableRow>
+
+ <CheckBox android:id="@+id/selmannocbox_label"
+           android:text="SELECT ANY" />
+ 
+ <Spinner android:id="@+id/selmanno_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="false"
+          android:prompt="@string/no_prompt" />
+
+ <CheckBox android:id="@+id/selmansunitcbox_label"
+           android:text="SUBUNIT" />
+ 
+ <Spinner android:id="@+id/selmansunit_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="false"
+          android:prompt="@string/subunit_prompt" />
+
+ </TableRow>
+
+ <TableRow>
+
+ <CheckBox android:id="@+id/selmanrankcbox_label"
+           android:text="RANK" />
+ 
+ <Spinner android:id="@+id/selmanrank_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="false"
+          android:prompt="@string/rank_prompt" />
+
+ <CheckBox android:id="@+id/selmandofcbox_label"
+           android:text="LAST FIRED" />
+ 
+ <Spinner android:id="@+id/selmandof_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="false"
+          android:prompt="@string/no_prompt" />
+
+ </TableRow>
+ 
+ <TableRow>
+ 
+  <TextView 
+           android:text="" />
+ 
+  <TextView 
+           android:text="" />
+
+ <CheckBox android:id="@+id/selmanpercentcbox_label"
+           android:text="%age" />
+ 
+ <Spinner android:id="@+id/selmanpercent_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="false"
+          android:prompt="@string/percent_prompt" />
+
+ </TableRow>
+
+ </TableLayout>
+
+ <RelativeLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" >
+
+ <Button android:id="@+id/selectmaninfo_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:text="INFO" />
+
+ <Button android:id="@+id/selectmanback_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/selectmaninfo_label"
+           android:layout_alignTop="@id/selectmaninfo_label"
+           android:text="BACK" />
+
+ 
+ <Button android:id="@+id/selectmanok_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/selectmanback_label"
+           android:layout_alignTop="@id/selectmaninfo_label"
+           android:text="OK" />
+
+
+ </RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip">
+  
+<TextView  
+    android:id="@+id/main_label"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity="center"
+    android:layout_marginBottom="30dip"
+    android:layout_marginLeft="70dip"
+    android:text="@string/main"
+    />
+    
+ <TableLayout android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:stretchColumns="*">   
+ 
+ <TableRow>
+ 
+ <Button android:id="@+id/input_label"
+         android:text="@string/input" />
+
+ <Button android:id="@+id/select_label"
+         android:text="@string/select" />
+
+ </TableRow>
+ <TableRow>
+
+ <Button android:id="@+id/weapon_label"
+         android:text="@string/weapon" />
+
+ <Button android:id="@+id/ammn_label"
+         android:text="@string/ammn" />
+          
+  </TableRow>
+  <TableRow>
+           
+ <Button android:id="@+id/detailsel_label"
+         android:text="@string/detailsel" />
+ 
+ <Button android:id="@+id/firing_label"
+         android:text="@string/firing" />
+ 
+ </TableRow>
+
+ </TableLayout>
+
+ <Button android:id="@+id/sop_label"
+         android:layout_width="wrap_content"      
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dip"         
+         android:layout_gravity="center"
+         android:text="SOP" />
+  
+  <RelativeLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+  
+ <Button android:id="@+id/info_label"
+         android:layout_width="wrap_content"      
+         android:layout_height="wrap_content" 
+         android:layout_below="@id/sop_label"        
+         android:layout_alignParentRight="true"
+         android:text="info" />
+ 
+ <Button android:id="@+id/exit_label"
+         android:layout_width="wrap_content"      
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@id/info_label"
+         android:layout_alignTop="@id/info_label"         
+         android:text="EXIT" />
+ 
+  </RelativeLayout>
+</LinearLayout>

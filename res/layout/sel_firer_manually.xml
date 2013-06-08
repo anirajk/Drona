@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+<LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+
+<TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="SELECT MANUALLY" />
+
+
+<TableLayout 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:stretchColumns="*">
+
+ <TableRow>
+
+ <TextView android:text="" />
+
+ <TextView android:text="" />
+
+ <TextView android:id="@+id/selmantotalfirers_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="" />
+
+ <TextView android:id="@+id/selmanfirersselected_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0" />
+           
+ </TableRow>
+ 
+ <TableRow>          
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="WPN" />
+
+ <EditText android:id="@+id/selmanwpntextbox_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:editable="false"
+           android:clickable="false" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="TRADE" />
+
+ <EditText android:id="@+id/selmantradetextbox_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:editable="false"
+           android:clickable="false" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SUBUNIT" />
+
+ <EditText android:id="@+id/selmansunittextbox_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:editable="false"
+           android:clickable="false" />
+ 
+ </TableRow>
+ </TableLayout>
+
+ 
+ <TableLayout android:id="@+id/selectmanfirerstable"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:stretchColumns="*">
+
+ <TableRow>
+
+ <Button android:id="@+id/selmanselectall_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SELECT ALL" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="No" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Rank" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Name" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Butt No" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Reg No" /> 
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Last Fired" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="%Age" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Std" />
+
+ </TableRow>
+
+ </TableLayout>
+ 
+ 
+ <RelativeLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" >
+
+ <Button android:id="@+id/selectmaninfo_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:text="INFO" />
+
+ <Button android:id="@+id/selectmanback_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/selectmaninfo_label"
+           android:layout_alignTop="@id/selectmaninfo_label"
+           android:text="BACK" />
+
+ <Button android:id="@+id/selmanaddl_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/selectmanback_label"
+           android:layout_alignTop="@id/selectmaninfo_label"
+           android:text="ADDL" />
+
+ <Button android:id="@+id/selectmanok_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/selmanaddl_label"
+           android:layout_alignTop="@id/selectmaninfo_label"
+           android:text="OK" />
+
+ <Button android:id="@+id/selmanchangeip_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/selectmanok_label"
+           android:layout_alignTop="@id/selectmaninfo_label"
+           android:text="CHANGE QR" />
+
+ </RelativeLayout>
+</LinearLayout>
+</ScrollView>

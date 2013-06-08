@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+
+<TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="ALLOT ADDL WPNS" />
+
+<TableLayout 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:stretchColumns="*">
+
+ <TableRow>
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="RIF INSAS 5.56 MM" />
+
+ <TextView android:id="@+id/allotaddlwpn1_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="LMG INSAS 5.56 MM" />
+
+ <TextView android:id="@+id/allotaddlwpn2_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="CMG 9 MM" />
+
+ <TextView android:id="@+id/allotaddlwpn3_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0" />
+ </TableRow>
+
+ <TableRow>
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="LMG 7.62 MM" />
+
+ <TextView android:id="@+id/allotaddlwpn4_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="AK 47/56" />
+
+ <TextView android:id="@+id/allotaddlwpn5_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="PISTOL AUTO 9 MM" />
+
+ <TextView android:id="@+id/allotaddlwpn6_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0" />
+ 
+ </TableRow>
+ </TableLayout>
+
+ 
+ <TableLayout android:id="@+id/allotaddlwpnstable"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:stretchColumns="*">
+
+ <TableRow>
+
+ <Button android:id="@+id/allotaddlselectall_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SELECT ALL" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="No" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Rank" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Name" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Wpn" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Butt No" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Reg No" /> 
+
+ 
+ </TableRow>
+
+ </TableLayout>
+ 
+
+ <RelativeLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" >
+
+ <Button android:id="@+id/allotaddlinfo_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:text="INFO" />
+
+ <Button android:id="@+id/allotaddlback_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/allotaddlinfo_label"
+           android:layout_alignTop="@id/allotaddlinfo_label"
+           android:text="BACK" />
+
+
+ <Button android:id="@+id/allotaddlok_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/allotaddlback_label"
+           android:layout_alignTop="@id/allotaddlinfo_label"
+           android:text="OK" />
+
+
+ </RelativeLayout>
+ 
+</LinearLayout>
+</ScrollView>

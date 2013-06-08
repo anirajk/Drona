@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip">
+  
+<TextView  
+    android:id="@+id/inputdata_label"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity="center"
+    android:layout_marginBottom="30dip"
+    android:layout_marginLeft="70dip"
+    android:text="@string/input"
+    />
+    
+ <TableLayout android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:stretchColumns="*">   
+ 
+ <TableRow>
+ 
+ <Button android:id="@+id/inputmanual_label"
+         android:text="@string/inputmanual" />
+
+ <Button android:id="@+id/loaddb_label"
+         android:text="@string/loaddb" />
+
+ </TableRow>
+ <TableRow>
+
+ <Button android:id="@+id/delete_label"
+         android:text="@string/delete" />
+
+ <Button android:id="@+id/selupdate_label"
+         android:text="@string/selupdate" />
+          
+  </TableRow>
+</TableLayout>
+
+<Button android:id="@+id/inputhome_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dip"
+        android:layout_gravity="right"
+        android:text="HOME" />     
+
+</LinearLayout>

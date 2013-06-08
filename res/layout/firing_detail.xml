@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+<LinearLayout android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+<LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="30dip"
+             android:orientation="horizontal" >
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginLeft="250dip"
+           android:textSize="25dip"
+           android:text="FIRING DETAIL NO " />
+ 
+ <TextView android:id="@+id/detailno_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="25dip"
+           android:text="1" />
+
+</LinearLayout>
+
+<TableLayout  android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:stretchColumns="*">
+
+<TableRow>
+ 
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="WPN" />
+
+ <EditText android:id="@+id/firingdetwpn_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:editable="false"
+           android:clickable="false" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="TGT TYPE" />
+
+ <Spinner android:id="@+id/firingdettgttype_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/tgttype_prompt" />
+
+</TableRow>
+
+<TableRow>
+ 
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="VIS" />
+
+ <EditText android:id="@+id/firingdetvis_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:editable="false"
+           android:clickable="false" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="POSN" />
+
+ <EditText android:id="@+id/firingdetposn_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:editable="false"
+           android:clickable="false" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="RG" />
+
+ <EditText android:id="@+id/firingdetrange_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:editable="false"
+           android:clickable="false" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="TYPE" />
+
+ <EditText android:id="@+id/firingdettype_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:editable="false"
+           android:clickable="false" />
+
+</TableRow>
+</TableLayout>
+
+ <TableLayout android:id="@+id/firingdetailtable"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:stretchColumns="*">
+
+ <TableRow>
+
+ <Button android:id="@+id/firingdetselectall_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SELECT ALL" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Tgt No" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Army No" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Rank" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Name" />
+
+<TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Wpn" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Butt No" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Reg No" /> 
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="History" /> 
+
+ </TableRow>
+
+ </TableLayout>
+
+<RelativeLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" >
+
+ <Button android:id="@+id/prevdetail_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="PREV DETAIL" />
+
+ <Button android:id="@+id/nextdetail_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/prevdetail_label"
+           android:layout_alignTop="@id/prevdetail_label"
+           android:text="NEXT DETAIL" />
+
+ <Button android:id="@+id/changewpn_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/prevdetail_label"
+           android:layout_alignLeft="@id/prevdetail_label"
+           android:text="CHANGE WPN" />
+
+ <Button android:id="@+id/changefirer_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/changewpn_label"
+           android:layout_alignTop="@id/changewpn_label"
+           android:text="CHANGE FIRER" />
+ 
+ <Button android:id="@+id/checktgt_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/changefirer_label"
+           android:layout_alignTop="@id/changefirer_label"
+           android:text="CHECK TGT" />
+
+ <Button android:id="@+id/firingdetok_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/checktgt_label"
+           android:layout_alignTop="@id/checktgt_label"
+           android:text="OK" /> 
+
+ <Button android:id="@+id/firingdetback_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/firingdetok_label"
+           android:layout_alignTop="@id/firingdetok_label"
+           android:text="BACK" />
+
+ <Button android:id="@+id/firingdetinfo_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/firingdetback_label"
+           android:layout_alignTop="@id/firingdetback_label"
+           android:text="INFO" />
+
+</RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

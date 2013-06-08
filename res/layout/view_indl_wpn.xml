@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             >
+
+<LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+<TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="VIEW INDL WPN" />
+
+
+ <TableLayout android:id="@+id/indlwpntable"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:stretchColumns="*">
+
+ <TableRow>
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="No" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Rank" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Name" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Wpn" />
+ 
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Butt No" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Reg No" />
+
+ </TableRow>
+
+ </TableLayout>
+ 
+
+ <Button android:id="@+id/indlwpnback_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:text="BACK" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip">
+    
+ <TextView  
+    android:id="@+id/tinputmanual_label"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity="center"
+    android:layout_marginBottom="20dip"
+    android:layout_marginLeft="70dip"
+    android:text="@string/inputmanual"
+    />
+  <TextView  
+    android:id="@+id/counter_label"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity="right"
+    android:layout_marginBottom="20dip"
+    android:text="0"
+  />
+  
+<TableLayout android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:stretchColumns="*">   
+ <TableRow>  
+  
+ <TextView  
+    android:id="@+id/no_label"
+    android:text="@string/no"
+    />
+    
+ <EditText android:id="@+id/notextbox_label" 
+           android:singleLine="true"
+           android:inputType="textCapCharacters"/>
+ 
+ <TextView  
+    android:id="@+id/dob_label"
+    android:text="@string/dob"
+    />
+    
+ <Button android:id="@+id/dobbutton_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="" />
+ 
+ </TableRow>
+ 
+  <TableRow>  
+  
+ <TextView  
+    android:id="@+id/rank_label"
+    android:text="@string/rank"
+    />
+    
+ <Spinner android:id="@+id/rankspinner_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/rank_prompt" />
+ 
+ <TextView  
+    android:id="@+id/doe_label"
+    android:text="@string/doe"
+    />
+    
+ <Button android:id="@+id/doebutton_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="" />
+ 
+ </TableRow>
+ 
+  <TableRow>  
+  
+ <TextView  
+    android:id="@+id/name_label"
+    android:text="@string/name"
+    />
+    
+ <EditText android:id="@+id/nametextbox_label"
+           android:singleLine="true"
+           android:inputType="textCapWords" />
+ 
+ <TextView  
+    android:id="@+id/wpn_label"
+    android:text="WPN"
+    />
+    
+ <Spinner android:id="@+id/wpnspinner_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/weapon_prompt" />
+
+ 
+ </TableRow>
+ 
+  <TableRow>  
+  
+ <TextView  
+    android:id="@+id/trade_label"
+    android:text="@string/trade"
+    />
+    
+  <Spinner android:id="@+id/tradespinner_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/trade_prompt" />
+ 
+ 
+ <TextView  
+    android:id="@+id/butt_label"
+    android:text="@string/butt"
+    />
+    
+ <EditText android:id="@+id/butttextbox_label"
+           android:singleLine="true"
+           android:inputType="number" />
+ 
+ </TableRow>
+ 
+  <TableRow>  
+  
+ <TextView  
+    android:id="@+id/subunit_label"
+    android:text="@string/subunit"
+    />
+    
+  <Spinner android:id="@+id/sunitspinner_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/subunit_prompt" />
+ 
+ 
+ <TextView  
+    android:id="@+id/reg_label"
+    android:text="@string/reg"
+    />
+    
+ <EditText android:id="@+id/regtextbox_label"
+           android:singleLine="true"
+           android:inputType="number" />
+ 
+</TableRow>
+ 
+</TableLayout>
+
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+                
+  <Button android:id="@+id/viewlist_label"
+          android:layout_below="@id/regtextbox_label"
+          android:layout_width="wrap_content"
+          android:layout_alignLeft="@id/regtextbox_label"
+          android:layout_alignParentRight="true"
+          android:layout_height="wrap_content"
+          android:text="VIEW LIST" />
+          
+  <Button android:id="@+id/info_label"
+          android:layout_below="@id/viewlist_label"
+          android:layout_width="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_height="wrap_content"
+          android:text="info" />
+ 
+  <Button android:id="@+id/back_label"
+          android:layout_toLeftOf="@id/info_label"
+          android:layout_width="wrap_content"
+          android:layout_alignTop="@id/info_label"
+          android:layout_height="wrap_content"
+          android:text="BACK" />
+ 
+  <Button android:id="@+id/ok_label"
+          android:layout_toLeftOf="@id/back_label"
+          android:layout_width="wrap_content"
+          android:layout_alignTop="@id/back_label"
+          android:layout_height="wrap_content"
+          android:text="OK" />
+          
+  </RelativeLayout>
+          
+ </LinearLayout>
+ 

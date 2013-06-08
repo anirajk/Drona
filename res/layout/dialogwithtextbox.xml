@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="10dip"
+              android:paddingRight="10dip">
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:text="Number" />
+ <EditText android:id="@+id/dialognumber_label" 
+           android:layout_width="250dip"
+           android:layout_height="wrap_content" />
+ <LinearLayout android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:paddingTop="15dip">
+  <Button android:id="@+id/dialogok_button"
+          android:layout_width="80dip"
+          android:layout_height="wrap_content" 
+          android:text="OK" />
+
+  <Button android:id="@+id/dialogcancel_button"
+          android:layout_width="80dip"
+          android:layout_height="wrap_content" 
+          android:text="Cancel" />
+ </LinearLayout>
+</LinearLayout> 

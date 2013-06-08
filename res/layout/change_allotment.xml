@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+<LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+
+<TextView android:id="@+id/text_label"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginLeft="200dip"
+          android:textSize="25dip"
+          android:layout_marginBottom="30dip"
+          android:text="CHANGE ALLOTMENT" />
+
+<TableLayout android:id="@+id/changeallottable"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="20dip"
+              android:stretchColumns="*">
+
+ <TableRow>
+
+ <Button android:id="@+id/changeallotselectall_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SELECT ALL" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="No" /> 
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Rank" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Name" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Wpn" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Butt No" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Wpn" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Butt No" />
+
+ 
+ </TableRow>
+
+ </TableLayout>
+
+ <RelativeLayout android:layout_width="fill_parent"
+                 android:layout_height="wrap_content" >
+
+ <Button android:id="@+id/changeallotinfo_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:text="INFO" />
+
+ <Button android:id="@+id/changeallotback_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/changeallotinfo_label"
+           android:layout_alignTop="@id/changeallotinfo_label"
+           android:text="BACK" />
+
+
+ <Button android:id="@+id/changeallotok_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/changeallotback_label"
+           android:layout_alignTop="@id/changeallotinfo_label"
+           android:text="OK" />
+
+
+ </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
+

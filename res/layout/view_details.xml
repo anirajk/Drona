@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+     
+  <TextView  
+    android:id="@+id/indldet_label"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_marginLeft="70dip"
+    android:layout_marginBottom="20dip"
+    android:text="INDIVIDUAL DETAILS"
+  />
+  
+  <Button android:id="@+id/detback_label"
+          android:layout_marginBottom="15dip"
+          android:layout_width="wrap_content"
+          android:layout_gravity="right"
+          android:layout_height="wrap_content"
+          android:text="BACK" />
+ 
+ 
+ <ScrollView android:layout_width="wrap_content" 
+             android:layout_height="wrap_content" 
+    > 
+  <TableLayout android:id="@+id/alldettable_label"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:stretchColumns="*"
+           >   
+ <TableRow>  
+  
+ <TextView  
+    android:text="@string/no"
+    />
+  
+ <TextView  
+    android:text="@string/rank"
+    />
+ 
+ <TextView  
+    android:text="@string/name"
+    />
+ 
+ <TextView  
+    android:text="@string/trade"
+    />
+ 
+ <TextView  
+    android:text="@string/subunit"
+    />
+ 
+ <TextView  
+    android:text="@string/dob"
+    />
+ 
+ <TextView  
+    android:text="@string/doe"
+    />
+ 
+ <TextView  
+    android:text="WPN"
+    />
+ 
+ <TextView  
+    android:text="@string/reg"
+    />
+ 
+ <TextView  
+    android:text="@string/butt"
+    />
+    
+ </TableRow>
+ 
+ </TableLayout>   
+ </ScrollView>
+    
+</LinearLayout>    

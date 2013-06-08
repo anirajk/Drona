@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip">
+    
+ <TextView  
+    android:id="@+id/tselupdate_label"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity="center"
+    android:layout_marginBottom="20dip"
+    android:layout_marginLeft="70dip"
+    android:text="@string/selupdate"
+    />
+ <TextView
+    android:id="@+id/oldno_label"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:text="" 
+   />
+  
+<TableLayout android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:stretchColumns="*">   
+ <TableRow>  
+  
+ <CheckBox  
+    android:id="@+id/uno_label"
+    android:text="@string/no"
+    android:visibility="gone"
+    />
+   <TextView android:id="@+id/notext_label"
+             android:text="@string/no" /> 
+ <EditText android:id="@+id/eunotextbox_label"
+           android:singleLine="true"
+           android:inputType="textCapCharacters" />
+           
+ <EditText android:id="@+id/unotextbox_label"
+           android:editable="false"
+           android:visibility="gone"
+           />
+ 
+ <CheckBox  
+    android:id="@+id/udob_label"
+    android:text="@string/dob"
+    />
+    
+ <Button android:id="@+id/udobbutton_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="" />
+ 
+ </TableRow>
+ 
+  <TableRow>  
+  
+ <CheckBox  
+    android:id="@+id/urank_label"
+    android:text="@string/rank"
+    />
+    
+ <Spinner android:id="@+id/urankspinner_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/rank_prompt" />
+ 
+ <CheckBox  
+    android:id="@+id/udoe_label"
+    android:text="@string/doe"
+    />
+    
+<Button android:id="@+id/udoebutton_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="" />
+  
+ </TableRow>
+ 
+  <TableRow>  
+  
+ <CheckBox  
+    android:id="@+id/uname_label"
+    android:text="@string/name"
+    />
+    
+ <EditText android:id="@+id/unametextbox_label"
+           android:editable="false" />
+           
+ <EditText android:id="@+id/eunametextbox_label"
+           android:singleLine="true"
+           android:inputType="textCapWords"
+           android:visibility="gone" />
+ 
+ 
+ <CheckBox  
+    android:id="@+id/uwpn_label"
+    android:text="WPN"
+    />
+    
+ <Spinner android:id="@+id/uwpnspinner_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/weapon_prompt" />
+
+ 
+ </TableRow>
+ 
+  <TableRow>  
+  
+ <CheckBox  
+    android:id="@+id/utrade_label"
+    android:text="@string/trade"
+    />
+    
+  <Spinner android:id="@+id/utradespinner_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/trade_prompt" />
+ 
+ 
+ <CheckBox  
+    android:id="@+id/ubutt_label"
+    android:text="@string/butt"
+    />
+    
+ <EditText android:id="@+id/ubutttextbox_label"
+           android:editable="false" />
+ 
+ <EditText android:id="@+id/eubutttextbox_label"
+           android:singleLine="true"
+           android:inputType="number"
+           android:visibility="gone" />
+ 
+ </TableRow>
+ 
+  <TableRow>  
+  
+ <CheckBox  
+    android:id="@+id/usubunit_label"
+    android:text="@string/subunit"
+    />
+    
+  <Spinner android:id="@+id/usunitspinner_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/subunit_prompt" />
+ 
+ 
+ <CheckBox  
+    android:id="@+id/ureg_label"
+    android:text="@string/reg"
+    />
+    
+ <EditText android:id="@+id/uregtextbox_label"
+           android:editable="false" />
+           
+ <EditText android:id="@+id/euregtextbox_label"
+           android:singleLine="true"
+           android:inputType="number"
+           android:visibility="gone" />
+ 
+ 
+</TableRow>
+ 
+</TableLayout>
+
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+                
+          
+  <Button android:id="@+id/uinfo_label"
+          android:layout_below="@id/uregtextbox_label"
+          android:layout_width="wrap_content"
+          android:layout_marginTop="10dip"
+          android:layout_alignParentRight="true"
+          android:layout_height="wrap_content"
+          android:text="info" />
+ 
+  <Button android:id="@+id/uback_label"
+          android:layout_toLeftOf="@id/uinfo_label"
+          android:layout_width="wrap_content"
+          android:layout_alignTop="@id/uinfo_label"
+          android:layout_height="wrap_content"
+          android:text="BACK" />
+ 
+  <Button android:id="@+id/uok_label"
+          android:layout_toLeftOf="@id/uback_label"
+          android:layout_width="wrap_content"
+          android:layout_alignTop="@id/uback_label"
+          android:layout_height="wrap_content"
+          android:text="OK" />
+  
+  <Button android:id="@+id/unook_label"
+          android:layout_toLeftOf="@id/uok_label"
+          android:layout_width="wrap_content"
+          android:layout_alignTop="@id/uok_label"
+          android:layout_height="wrap_content"
+          android:text="NO OK" />
+   
+          
+  </RelativeLayout>
+          
+ </LinearLayout>
+ 

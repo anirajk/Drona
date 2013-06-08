@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+<TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="WEAPON ALLOTMENT" />
+
+<TableLayout  android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="40dip"
+              android:stretchColumns="*">
+
+ <TableRow>
+
+ <Button android:id="@+id/viewindlwpn_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="VIEW INDL WPN" />
+
+ <Button android:id="@+id/allotaddlwpn_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="ALLOT ADDL WPN" />
+
+ </TableRow>
+
+ <TableRow>
+
+ <Button android:id="@+id/selectwpn_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SELECT WPN" />
+
+ <Button android:id="@+id/changeallot_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="CHANGE ALLOTMENT" />
+
+ </TableRow>
+
+ </TableLayout>
+
+ <Button android:id="@+id/wpnhome_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="40dip"
+           android:layout_alignParentRight="true"
+           android:text="HOME" />
+ 
+
+</LinearLayout>

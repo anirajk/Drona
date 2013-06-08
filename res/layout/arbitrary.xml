@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip">
+  
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity="center"
+    android:layout_marginBottom="30dip"
+    android:layout_marginLeft="70dip"
+    android:text="ARBITRARY"
+    />
+    
+ <TableLayout android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:stretchColumns="*">   
+ 
+ <TableRow>
+ 
+ <TextView  
+    android:text="WPN"
+    />
+ 
+ <Spinner android:id="@+id/arbwpnspinner_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/weapon_prompt" />
+
+ <TextView  
+    android:text="@string/subunit"
+    />
+ <CheckBox  
+    android:id="@+id/sunithqcbox_label"
+    android:text="HQ"
+    />
+ 
+  </TableRow>
+    
+  <TableRow>
+ 
+ <TextView  
+    android:text=""
+    />
+ 
+ <TextView  
+    android:text=""
+    />
+ 
+ <TextView  
+    android:text=""
+    />
+ 
+ <CheckBox  
+    android:id="@+id/sunitpcbox_label"
+    android:text="P"
+    />
+ 
+ </TableRow>
+    
+  <TableRow>
+ 
+ <TextView  
+    android:text=""
+    />
+ 
+ <TextView  
+    android:text=""
+    />
+ 
+ <TextView  
+    android:text=""
+    />
+ 
+ <CheckBox  
+    android:id="@+id/sunitqcbox_label"
+    android:text="Q"
+    />
+ 
+ </TableRow>
+    
+  <TableRow>
+ 
+ <TextView  
+    android:text=""
+    />
+ 
+ <TextView  
+    android:text=""
+    />
+ 
+ <TextView  
+    android:text=""
+    />
+ 
+ 
+ <CheckBox  
+    android:id="@+id/sunitrcbox_label"
+    android:text="R"
+    />
+ 
+ </TableRow>
+    
+ <TableRow>
+
+ <TextView  
+    android:text="SELECT ANY"
+    />
+ 
+ <Spinner android:id="@+id/arbnooffirersspinner_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/no_prompt" />
+
+ <CheckBox  
+    android:id="@+id/arbbalancecbox_label"
+    android:text="BALANCE FIRERS FROM PREVIOUS MONTHS"
+    />
+    
+ <Spinner android:id="@+id/arbbalfirersspinner_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/no_prompt" />
+    
+          
+  </TableRow>
+</TableLayout>
+
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+                        
+  <Button android:id="@+id/arbinfo_label"
+          android:layout_below="@id/arbbalfirersspinner_label"
+          android:layout_width="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_height="wrap_content"
+          android:text="info" />
+ 
+  <Button android:id="@+id/arbback_label"
+          android:layout_toLeftOf="@id/arbinfo_label"
+          android:layout_width="wrap_content"
+          android:layout_alignTop="@id/arbinfo_label"
+          android:layout_height="wrap_content"
+          android:text="BACK" />
+ 
+  <Button android:id="@+id/arbok_label"
+          android:layout_toLeftOf="@id/arbback_label"
+          android:layout_width="wrap_content"
+          android:layout_alignTop="@id/arbback_label"
+          android:layout_height="wrap_content"
+          android:text="OK" />
+          
+  </RelativeLayout>
+ 
+</LinearLayout>

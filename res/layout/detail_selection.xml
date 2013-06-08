@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+<TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginBottom="25dip"
+          android:text="DETAIL SELECTION" />
+
+<TableLayout  android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:stretchColumns="*">
+
+ <TableRow>
+
+ 
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="VIS" />
+ 
+ <Spinner android:id="@+id/detselvis_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/vis_prompt" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="TYPE" />
+ 
+ <Spinner android:id="@+id/detseltype_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/type_prompt" />
+
+ <CheckBox android:id="@+id/detselrankcbox_label"
+           android:text="RK" />
+ 
+ <Spinner android:id="@+id/detselrank_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="false"
+          android:prompt="@string/rank_prompt" />
+
+ </TableRow>
+
+ <TableRow>
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="WPN" />
+ 
+ <Spinner android:id="@+id/detselwpn_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/weapon_prompt" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="RANGE" />
+ 
+ <Spinner android:id="@+id/detselrange_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/range_prompt" />
+
+ <CheckBox android:id="@+id/detselsunitcbox_label"
+           android:text="SU" />
+ 
+ <Spinner android:id="@+id/detselsunit_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="false"
+          android:prompt="@string/subunit_prompt" />
+
+
+ </TableRow>
+
+ <TableRow>
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="DETAIL" />
+ 
+ <Spinner android:id="@+id/detseldetail_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/no_prompt" />
+
+ <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="POSN" />
+ 
+ <Spinner android:id="@+id/detselposn_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:prompt="@string/posn_prompt" />
+
+ <CheckBox android:id="@+id/detseltgttypecbox_label"
+           android:text="TGT TYPE" />
+ 
+ <Spinner android:id="@+id/detseltgttype_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:clickable="false"
+          android:prompt="@string/tgttype_prompt" />
+
+
+ </TableRow>
+ 
+ <TableRow>
+ 
+  <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRAC" />
+ 
+  <Spinner android:id="@+id/detselprac_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:prompt="@string/prac_prompt" />
+
+ </TableRow>
+
+ </TableLayout>
+
+ <RelativeLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginTop="30dip" >
+
+ <Button android:id="@+id/detselhome_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:text="HOME" />
+
+ <Button android:id="@+id/detselok_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/detselhome_label"
+           android:layout_alignTop="@id/detselhome_label"
+           android:text="OK" />
+
+ <Button android:id="@+id/detselipman_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/detselok_label"
+           android:layout_alignTop="@id/detselok_label"
+           android:text="INPUT MANUALLY" />
+
+ <Button android:id="@+id/detselrgcourse_label"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toLeftOf="@id/detselipman_label"
+           android:layout_alignTop="@id/detselipman_label"
+           android:text="RG COURSE" />
+
+
+ </RelativeLayout>
+</LinearLayout>
+
